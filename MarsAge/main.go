@@ -9,6 +9,6 @@ func main() {
     fmt.Println(mars)
 }
 
-func mars_age(a int) int {
+func mars_age(a int) int { //function with return type and arguments
     return a*365/687
 } 
