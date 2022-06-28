@@ -13,9 +13,20 @@ type T struct { //struct
 func (p *T) a() { //pointer function
 	p.val += 1
 }
+
 func (p T) b() {
 	p.val += 2
 }
+
+func sum(nums ...int){  // variadic function
+	total := 0
+	for _, v:= range nums{
+		total+=v
+	}
+	fmt.Println(total)
+}
+
+
 func main() {
 	// fmt.Println("Hello world")
 	for i := 4; i > 0; i-- {
@@ -30,7 +41,9 @@ func main() {
 	var s []int = a[1:3]       //slices
 	s[0] = 8
 	fmt.Println(a)
-	fmt.Println(s[0]) /*A slice does not store any data;
+	fmt.Println(s[0]) 
+	
+	/*A slice does not store any data;
 	it just describes a section of an underlying array.
 	Changing the elements of a slice modifies the corresponding
 	elements of its underlying array*/
@@ -40,7 +53,7 @@ func main() {
 	fmt.Println(a1)
 
 	/*
-	   	m := make(map[string]int) //map using make()method   m := make(map[string]int)
+	   	m := make(map[string]int) //map using make()method { m := make(map[string]int) }
 	       m["James"] = 42
 	       m["Amy"] = 24
 
@@ -57,4 +70,9 @@ func main() {
 	m["Bob"] = 8
 
 	fmt.Println(m)
+
+	sum (2,4,6) // call variadic function
+	sum (42,8)
+	sum(1,2,3,4,5,6,7,8,9)
+
 }
