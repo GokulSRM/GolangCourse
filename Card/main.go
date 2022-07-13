@@ -12,12 +12,16 @@ func main() {
 	// fmt.Println(cards)
 	cards := newDeck()
 
-	hand, remainingCards := deal(cards, 5)
-	// cards.print()
+	// hand, remainingCards := deal(cards, 5)
+	// // cards.print()
 
-	hand.print()
-	remainingCards.print()
+	// hand.print()
+	// remainingCards.print()
 
+	// greeting := "Hi There"
+	// fmt.Println([]byte(greeting))
+
+	fmt.Println(cards.toString())
 	// for i, card := range cards {
 	// 	fmt.Println(i, card)
 	// }
