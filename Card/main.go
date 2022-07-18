@@ -11,7 +11,7 @@ func main() {
 	// cards := deck{"Five of hearts", "Three Diamonds", newCard()}   //type deck is of []string from deck.go
 	// cards = append(cards, "Six of Hearts")
 	// fmt.Println(cards)
-	// cards := newDeck()
+	cards := newDeck()
 
 	// hand, remainingCards := deal(cards, 5)
 	// // cards.print()
@@ -30,8 +30,8 @@ func main() {
 	// 	fmt.Println(i, card)
 	// }
 
-	cards := newDeckFromFile("my")
-
+	// cards := newDeckFromFile("my_cards")
+	cards.shuffle()
 	cards.print()
 }
 
