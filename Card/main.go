@@ -33,6 +33,18 @@ func main() {
 	// cards := newDeckFromFile("my_cards")
 	cards.shuffle()
 	cards.print()
+
+	// Exercise Program 1
+
+	// num := []int{1,10,7,2,9,3,8,6,4,5,0}
+
+	// for _,n := range num{
+	// 	if n%2 == 0{
+	// 		fmt.Println(n, " is even")
+	// 	}else{
+	// 		fmt.Println(n, " is odd")
+	// 	}
+	// }
 }
 
 // func newCard() string {
